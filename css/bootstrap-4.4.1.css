@@ -63,6 +63,16 @@ body {
   background-color: #fff;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #D00095;
+}
+
+::selection {
+  color: white;
+  background: #D00095;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
