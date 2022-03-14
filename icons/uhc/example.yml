@@ -1,0 +1,541 @@
+﻿######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+menu-settings:
+  name: '&b&l迷你游戏'
+  rows: 6
+  command: menu22
+  auto-refresh: -1
+  clone-icon: false
+
+######################
+#+                  +#
+#    DEFAULT ICON    #
+#+                  +#
+######################
+default-icon:
+  type: animated
+  child:
+    frame1:
+      id: AIR
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+# Note that the nodes is case-insensitive (except some sub-nodes)
+# You can use lowercase or uppercase whatever you want
+
+per-player-skull4:
+  NAME: '&d&l返回热门游戏'
+  LORE:
+    - '&7点我返回热门游戏'
+    - ''
+    - '&7你也可以输入指令&a/server&7以传送'
+    - '&7或者点击玩家聊天框所在区域以传送'
+  position-x: 3
+  position-y: 5
+  COMMAND:
+  - 'STP 热门游戏'
+  - "sound: ENTITY_WITHER_SPAWN"
+  id: player_head
+  skull: 'a374fd6d1448fa130e9249af199023846b8fc877f117f3ac1c43403ba7fef3'
+
+zanzu:
+  NAME: '&6&l称号领取'
+  COMMAND: 
+    - 'playerrank open'
+  LORE:
+    - '&8领取你的专属称号'
+    - ''
+    - '&7&m---------------&c注意事项&7&m---------------'
+    - '&f➳ &7需在线达到&e24&7小时以上才能升级获取'
+    - '&f➳ &7以后每&a24&7小时可点绿宝石升级'
+    - '&f➳ &7点击牌子后只能输入&e4个中文'
+    - '&f➳ &7不能含骂人词出现，狗头、腐竹也算'
+    - '&f➳ &7不能出现彩色字体，且不能相同称号'
+    - '&4☞ &7若违规，获得称号后可能会被&c封禁7天'
+    - ''
+    - '&7&m---------------&6通知事项&7&m---------------'
+    - '&b✦ &7禁止连点器、背包整理、更多动作等'
+    - '&b✦ &7请勿利用地图、游戏BUG进行卡点'
+    - '&b✦ &7禁止长期游玩&e职业战争'
+    - '&b✦ &7请不要刷屏，多次使用重复符号'
+    - ''
+    - '&7&m---------------&d服务信息&7&m---------------'
+    - '&e☄ &7周末、下午、晚上人较多，望理解~'
+    - '&e☄ &7部分游戏未翻译，你可以帮忙：D'
+    - '&e☄ &7有任何问题均可入Q群：&a975222084&7询问'
+  id: player_head
+  skull: '63e1adf99872b0f008ae2daec86b6fd3ad992483f7fb733be973e38e42f476a8'
+  POSITION-X: 7
+  POSITION-Y: 5
+
+spawncmd:
+  COMMAND:
+  - 'spawn'
+  - "sound: ENTITY_SHULKER_TELEPORT"
+  NAME: '&b&l主城'
+  LORE:
+    - '&7点我返回主城'
+    - ''
+    - '&7你也可以&a/spawn&7回主城'
+    - '&7在这里，你可以进行服饰抽奖'
+    - '&7也能在这里使用服饰炫耀~'
+    - '&7并且大部分活动于主城举行'
+  id: player_head
+  skull: 'cde33c95fec1b8d988250f5f5b3a2485742439faeaa75ed506ea01d75e17f21'
+  POSITION-X: 5
+  POSITION-Y: 5
+  
+pro:
+  COMMAND:
+  - 'procosmetics open main'
+  - "sound: BLOCK_NOTE_BLOCK_PLING"
+  NAME: '&d&l服饰菜单'
+  LORE:
+    - '&7打开服饰菜单'
+    - ''
+    - '&7用你在各个地方赢得的服饰币'
+    - '&7在主城抽奖，或直接购买'
+    - '&7注意，服饰币仅&e金币&7互通'
+  id: player_head
+  skull: '5726d9d0632e40bda5bcf65839ba2cc98a87bd619c53adf00310d6fc71f042b5'
+  POSITION-X: 4
+  POSITION-Y: 6
+
+brx:
+  COMMAND: 
+    - 'brx join'
+    - "sound: ENTITY_ZOMBIE_VILLAGER_CURE"
+  NAME: '&d&l大逃杀'
+  LORE:
+    - '&8枪战类游戏'
+    - ''
+    - '&7&m---------------&e玩法介绍&7&m---------------'
+    - '&7在飞机上进行跳伞，寻找箱子以获得物资'
+    - '&7用你手中的枪击杀敌人，并存活到最后'
+    - '&7当然，别忘记了还有一个不断缩小的毒圈'
+    - '&7切记，无材质包可&a群内&7下载'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7你可以开局前进行职业选择'
+    - '&e● &7具有&b车辆载具&7系统，但会有一些BUG'
+    - '&e● &7你死后可以对他人施加赏金'
+    - '&e● &7用杀人获得的钱在末影箱处购买物品'
+    - '&e● &7特殊类物品的制作，指令&a/brx recipes'
+    - '&e● &7吃鸡后你会获得一张地图以庆祝'
+    - '&e● &7吃金苹果可以恢复你的防弹衣护甲'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%battleroyalex_players_count%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&6"来发子弹吗？RPG可以满足你"'
+    - ''
+  id: player_head
+  skull: 'd5e6cca021a9913ce06d2e73776aa8b88447afb824cd657ff8c2cb88cdf0a3d5'
+  POSITION-X: 3
+  POSITION-Y: 2
+
+mh:
+  COMMAND: 
+    - 'menu25'
+    - "sound: ENTITY_ZOMBIE_VILLAGER_CURE"
+  NAME: '&3&l奴才与饥饿'
+  LORE:
+    - '&8生存类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7按操作领取卡牌，并安装上&e30&7张卡牌'
+    - '&7完成后即可进行游戏'
+    - '&7游戏中，你需要不断靠近光源'
+    - '&7用你手上的卡牌，给对手施加压力'
+    - '&7当然，小心对手一次性放几十只蜘蛛'
+    - '&7在你地盘上'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7超过&a200&7种的卡牌'
+    - '&e● &7怪物会破坏你的建筑'
+    - '&e● &7有各种不同的事件'
+    - '&e● &7只能挖固定的方块，而不是所有方块'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_MinionsAndHunger%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&d"这是一场从无到有又到无的体验"'
+    - ''
+  id: player_head
+  skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U0ZjQ5NTM1YTI3NmFhY2M0ZGM4NDEzM2JmZTgxYmU1ZjJhNDc5OWE0YzA0ZDlhNGRkYjcyZDgxOWVjMmIyYiJ9fX0="
+  POSITION-X: 5
+  POSITION-Y: 3
+  
+UHC:
+  NAME: '&c&lUHC(极限生存游戏)'
+  LORE:
+    - '&8生存类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7在原版生存中进行生存，并活到最后'
+    - '&7这里的血量只能通过金苹果或头颅恢复'
+    - '&7地图的边界会随着时间的消逝而变小'
+    - '&7你能生存到最后吗？'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7你可以开局前进行职业选择'
+    - '&e● &7你死后可以对他人施加赏金'
+    - '&e● &7特殊类物品的制作，指令&a/uhc recipes'
+    - '&e● &7游戏到达一定时间进行决赛圈'
+    - '&e● &7获胜后你会获得一张地图以庆祝'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%uhc_players_count%'
+    - '&7至少需要玩家：&c4人'
+    - ''
+    - '&3"成为生存赢家的终极考验"'
+    - ''
+  COMMAND: 
+    - 'UHC join'
+    - "sound: ENTITY_ZOMBIE_VILLAGER_CURE"
+  id: player_head
+  skull: '962b138b04b645a1bb83878d9b151080002071ef3f8576ceab6a21c39b407017'
+  POSITION-X: 2
+  POSITION-Y: 4
+
+has:
+  NAME: '&e&l躲猫猫'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7化身为任意方块/动物进行躲藏'
+    - '&7别忘了小心那些飞来的猎手'
+    - '&7在你遇到危险时，你只能殊死一搏'
+    - '&7信标上生成的道具或许是你最后的希望'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7结束后&a输入“GG”&7可领取一定的业力'
+    - '&e● &7你可以切换任意你喜欢的箭粒子'
+    - '&e● &7赛前购买道具以轻松赢下比赛'
+    - '&e● &7用猫猫币以增加/减小躲藏者的概率'
+    - '&e● &7任意一方结束后均获得地图以庆祝'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_Hideandseek%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&d"看看是谁家的兔子跑了出来？"'
+    - ''
+  COMMAND: 
+    - 'openmenu Hideandseek.yml'
+    - "sound: BLOCK_NOTE_BLOCK_PLING"
+  id: player_head
+  skull: 'a6c029c9144d96fc4a06fae0599630d2dac0f715166f1c4ec11e731aed7b3d7f'
+  POSITION-X: 4
+  POSITION-Y: 4
+
+village:
+  NAME: '&c&l村民保卫战'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7传统的保卫游戏，你需要尽量保护村民'
+    - '&7腐肉抛于水井处&8(位于地图隐蔽处)'
+    - '&7它可以给你带来不同的惊喜，但是'
+    - '&7要村民还是你自己，你需要一个抉择'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7你可以在&a中途加入&7此游戏'
+    - '&e● &7可进行职业的选择，仅限游戏开始前'
+    - '&e● &7游戏中你会遇到不同的增益事件'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%villagedefense_arena_players_online%'
+    - '&7至少需要玩家：&c1人'
+    - ''
+    - '&e"唯一的目标是都存活下去......"'
+    - ''
+  COMMAND: 
+  - 'openmenu villagedefense.yml'
+  - "sound: BLOCK_NOTE_BLOCK_PLING"
+  id: player_head
+  skull: '8229b8ef49eb88563878ee4f24f8cee31cd20243532bb0a072a1f99d09fb6572'
+  POSITION-X: 7
+  POSITION-Y: 2
+
+Murder:
+  NAME: '&4&l谁是杀手'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7几名杀手与几名侦探，一群无辜的平民'
+    - '&7在众多人中找出杀手，并将其击杀'
+    - '&7藏起来！杀手正慢慢向你靠近'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7屏蔽聊天，避免玩家直接爆出杀手'
+    - '&e● &7若多次无职业，则增大下次获取概率'
+    - '&e● &7任何人祈祷均可能获得弓箭'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%murdermystery_arena_players_online%'
+    - '&7至少需要玩家：&c5人'
+    - ''
+    - '&c"你们一个也跑不掉......"'
+    - ''
+  COMMAND: 
+  - 'openmenu Murder.yml'
+  - "sound: BLOCK_NOTE_BLOCK_PLING"
+  id: player_head
+  skull: 'cb4af2f4d9095ed3f526a5126e0e1e4d532ba3262ada69dfd765a8413dcdab69'
+  POSITION-X: 8
+  POSITION-Y: 4
+  
+bridges:
+  NAME: '&6&l战桥突围'
+  LORE:
+    - '&8竞战类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7在桥上突破防线，并跳入敌方的突破口'
+    - '&7在这里，突破比防守更为重要'
+    - '&7巧妙利用方块防止敌人突破也非常重要'
+    - '&7这里是增强团队之间合作的必经之路'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7可实现每&bX&7回合重置一次方块'
+    - '&e● &7分为可堵家、不可堵家类型'
+    - '&e● &7分为击杀得分、突破得分类型'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%thebridge_arena_players_online%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&c"你只有一条路：往前冲"'
+    - ''
+  COMMAND: 
+  - 'openmenu Bridges.yml'
+  - "sound: BLOCK_NOTE_BLOCK_PLING"
+  id: player_head
+  skull: '15a7ee9a86de203674a93b570bc8992e500363dd32f2b9813daaeeabccf92151'
+  POSITION-X: 6
+  POSITION-Y: 4
+  
+glass:
+  id: LIGHT_BLUE_STAINED_GLASS_PANE
+
+  POSITION-X: 6
+  POSITION-Y: 2
+glass1:
+  id: LIGHT_BLUE_STAINED_GLASS_PANE
+
+  POSITION-X: 6
+  POSITION-Y: 3
+glass1f:
+  id: BLUE_STAINED_GLASS_PANE
+
+  POSITION-X: 7
+  POSITION-Y: 3
+glass1ff:
+  id: BLUE_STAINED_GLASS_PANE
+
+  POSITION-X: 7
+  POSITION-Y: 4
+glass1fff:
+  id: PURPLE_STAINED_GLASS_PANE
+
+  POSITION-X: 8
+  POSITION-Y: 2
+glass1ffff:
+  id: PURPLE_STAINED_GLASS_PANE
+
+  POSITION-X: 8
+  POSITION-Y: 3
+glass2:
+  id: LIME_STAINED_GLASS_PANE
+
+  POSITION-X: 5
+  POSITION-Y: 2
+glass3:
+  id: LIME_STAINED_GLASS_PANE
+
+  POSITION-X: 5
+  POSITION-Y: 4
+glass4:
+  id: YELLOW_STAINED_GLASS_PANE
+
+  POSITION-X: 4
+  POSITION-Y: 2
+glass5:
+  id: YELLOW_STAINED_GLASS_PANE
+
+  POSITION-X: 4
+  POSITION-Y: 3
+glass6:
+  id: ORANGE_STAINED_GLASS_PANE
+
+  POSITION-X: 3
+  POSITION-Y: 3
+glass7:
+  id: ORANGE_STAINED_GLASS_PANE
+
+  POSITION-X: 3
+  POSITION-Y: 4
+glass9:
+  id: RED_STAINED_GLASS_PANE
+
+  POSITION-X: 2
+  POSITION-Y: 2
+glass10:
+  id: RED_STAINED_GLASS_PANE
+
+  POSITION-X: 2
+  POSITION-Y: 3
+glass11:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 1
+  POSITION-Y: 2
+glass12:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 1
+  POSITION-Y: 3
+glass14:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 1
+  POSITION-Y: 4
+glass15:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 1
+  POSITION-Y: 5
+glass16:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 9
+  POSITION-Y: 2
+glass17:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 9
+  POSITION-Y: 3
+glass18:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 9
+  POSITION-Y: 4
+glass19:
+  id: WHITE_STAINED_GLASS_PANE
+
+  POSITION-X: 9
+  POSITION-Y: 5
+glass20:
+  id: BROWN_STAINED_GLASS_PANE
+
+  POSITION-X: 2
+  POSITION-Y: 5
+glass21:
+  id: BROWN_STAINED_GLASS_PANE
+
+  POSITION-X: 4
+  POSITION-Y: 5
+glass22:
+  id: BROWN_STAINED_GLASS_PANE
+
+  POSITION-X: 6
+  POSITION-Y: 5
+glass23:
+  id: BROWN_STAINED_GLASS_PANE
+
+  POSITION-X: 8
+  POSITION-Y: 5
+glass24:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 1
+  POSITION-Y: 1
+glass25:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 2
+  POSITION-Y: 1
+glass26:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 3
+  POSITION-Y: 1
+glass27:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 4
+  POSITION-Y: 1
+glass28:
+  id: BLACK_STAINED_GLASS_PANE
+  POSITION-X: 5
+  POSITION-Y: 1
+glass29:
+  id: BLACK_STAINED_GLASS_PANE
+  POSITION-X: 6
+  POSITION-Y: 1
+glass30:
+  id: BLACK_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 1
+glass31:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 8
+  POSITION-Y: 1
+glass32:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 9
+  POSITION-Y: 1
+glass33:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 1
+  POSITION-Y: 6
+glass34:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 2
+  POSITION-Y: 6
+glass35:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 3
+  POSITION-Y: 6
+glass36:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 5
+  POSITION-Y: 6
+glass37:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 6
+  POSITION-Y: 6
+glass38:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 7
+  POSITION-Y: 6
+glass39:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 8
+  POSITION-Y: 6
+glass40:
+  id: BLACK_STAINED_GLASS_PANE
+
+  POSITION-X: 9
+  POSITION-Y: 6
