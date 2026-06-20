@@ -1,0 +1,928 @@
+﻿######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+menu-settings:
+  name: '&c&l热门游戏'
+  rows: 6
+  command: menu
+  auto-refresh: -1
+  clone-icon: false
+
+######################
+#+                  +#
+#    DEFAULT ICON    #
+#+                  +#
+######################
+default-icon:
+  type: normal
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+# Note that the nodes is case-insensitive (except some sub-nodes)
+# You can use lowercase or uppercase whatever you want
+
+TheWallX:
+  NAME: '&a&l战墙 X'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7在墙倒下前，你需要尽可能的获取资源'
+    - '&7墙倒下后，杀死对方凋零与敌人'
+    - '&7与此同时，你也需要保护己方凋零'
+    - '&7因为它能给你带来无尽的复活'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7挖矿有概率弹出特殊奖励箱'
+    - '&e● &7开局前的职业/笼子选择'
+    - '&e● &7你死后可以对他人施加赏金'
+    - '&e● &7结束后你会获得一张地图以庆祝'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%thewalls_players_count%'
+    - '&7至少需要玩家：&c8人'
+    - ''
+    - '&d"它倒下的那一刻，我就知道有大事降临了"'
+    - ''
+  COMMAND: 
+    - 'tw join'
+  id: player_head
+  skull: '57781134f452d2c2be8d0c07ff9ce336407c5aba2d56b0cad22d7fa5658aa06c'
+  POSITION-X: 2
+  POSITION-Y: 2
+  
+TNTRun:
+  NAME: '&c&lTNTrun'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m-----------&e游戏介绍&7&m-----------'
+    - '&7你需要一直跑下去'
+    - '&7同时，脚下的方块会不断消失'
+    - '&7你可以用你的二段跳'
+    - '&7以此来避免掉入虚空中'
+    - ''
+    - '&7&m-----------&6游戏特色&7&m-----------'
+    - '&e● &7二段跳功能'
+    - '&e● &7沙子消失时会有清脆的挖沙声'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_tntrun_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&3&l"不要停下来呀"'
+    - ''
+  COMMAND: 
+    - 'tntrun quickjoin'
+  id: player_head
+  skull: '3af59776f2f03412c7b5947a63a0cf283d51fe65ac6df7f2f882e08344565e9'
+  POSITION-X: 2
+  POSITION-Y: 3
+
+Spleef:
+  NAME: '&6&l丢鸡蛋'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m------------&e游戏介绍&7&m------------'
+    - '&7拿着你的铲子，右键发射鸡蛋'
+    - '&7鸡蛋触碰的方块会消失'
+    - '&7注意点敌人的鸡蛋，与你的脚下'
+    - ''
+    - '&7&m------------&6游戏特色&7&m------------'
+    - '&e● &7丢到TNT时的范围爆炸'
+    - '&e● &7发射鸡蛋时的悦耳音效'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_splegg_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&c"小心，鸡蛋来咯"'
+    - ''
+  COMMAND: 
+    - 'splegg quickjoin'
+  id: player_head
+  skull: '9b2ced4e56605abd2a608b6d71501678c60c5722604feaa72106769b0d3ac759'
+  POSITION-X: 3
+  POSITION-Y: 3
+
+quake:
+  NAME: '&d&l雷神之锤'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m------------&e游戏介绍&7&m------------'
+    - '&7用你手上的锄头，右键发射炮弹'
+    - '&7利用指南针，尽可能的击中敌人'
+    - '&7也尽可能的小心被敌人击中'
+    - ''
+    - '&7&m------------&6游戏特色&7&m------------'
+    - '&e● &7指南针的指人效果'
+    - '&e● &7鼠标左键进行冲刺'
+    - '&e● &7一定时长的子弹CD'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_quake_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&6"让子弹飞一会儿~~"'
+    - ''
+  COMMAND: 
+    - 'quake quickjoin'
+  id: player_head
+  skull: '90cb29f77cefdfde0a2ad50a7d6787de0fb709d88e905713ad3ce0e9c0ef9b5f'
+  POSITION-X: 4
+  POSITION-Y: 3
+
+colofulmatch:
+  NAME: '&a&l彩虹大作战'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7手上会拿着一个随机颜色的粘土块'
+    - '&7你需要尽快跑到脚下对应的方块位置'
+    - '&7同时也要注意方块消失所剩余时间'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &7特殊的道具获取'
+    - '&e● &7随着时间增大而加快速度'
+    - '&e● &7根据存活时间进行排名'
+    - '&e● &7可开/关游戏中的音乐'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_blockparty_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&9"别变了，眼睛要瞎了~~"'
+    - ''
+  COMMAND: 
+    - 'blockparty quickjoin'
+  id: player_head
+  skull: '6e64a08dd535f57bd9bc4bdf698864fb247a353828d5db8907b25738c3c4'
+  POSITION-X: 2
+  POSITION-Y: 4
+
+TNTthrow:
+  NAME: '&e&l炸弹投手'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7随着时间减少，你手上会得到一个炸弹'
+    - '&7对准敌人基地，将其区域炸空'
+    - '&7又或者对准敌人，将其炸没'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7炸弹具有一定的粘性'
+    - '&e● &7最多储存&e3&7个炸弹'
+    - '&e● &7炸弹爆炸CD减少'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_bomblobbers_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&c"TNT和雪球你要哪个？小孩子才做选择"'
+    - ''
+  COMMAND: 
+    - 'bomblobbers quickjoin'
+  id: player_head
+  skull: 'a3cfd94e925eab4330a768afcae6c128b0a28e23149eee41c9c6df894c24f3de'
+  POSITION-X: 3
+  POSITION-Y: 4
+
+partygames:
+  NAME: '&a&l超级派对游戏'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7分为&a11&7个迷你游戏，实际游戏只有&e8&7个'
+    - '&7每个游戏开始前都会有介绍'
+    - '&7你需要尽可能的获得星星以获胜'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &7奖励蝙蝠/奖励猪'
+    - '&e● &7游戏结束的最终的排名'
+    - '&e● &7击杀动物时无需蓄力'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_partygames_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&b"来一次疯狂的游戏party吧"'
+    - ''
+  COMMAND: 
+    - 'partygames quickjoin'
+  id: player_head
+  skull: 'e5716f4080848aa4b79da3706b94e7b72fe4b1bd64938c08cd5c03ae3b73599'
+  POSITION-X: 2
+  POSITION-Y: 5
+
+miniwalls:
+  NAME: '&c&l迷你战墙'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m---------&e游戏介绍&7&m---------'
+    - '&7墙会在几秒后倒下'
+    - '&7你需要将凋零与敌人击杀'
+    - '&7最终赢得最后的胜利'
+    - ''
+    - '&7&m---------&6游戏特色&7&m---------'
+    - '&e● &7你可以进行职业选择'
+    - '&e● &7凋零血随时间减少而减少'
+    - '&e● &7凋零的高伤害攻击'
+    - '&e● &7所挖方块变成羊毛'
+    - '&e● &7恢复箭的CD与最大箭数'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%arcade_miniwalls_players%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&a"他很可爱，也很残忍!"'
+    - ''
+  COMMAND: 
+    - 'miniwalls quickjoin'
+  id: player_head
+  skull: '928191c32f1f3e11cacb7e68a25e0d94d80dcf9870b34f516dbbe5a792952752'
+  POSITION-X: 3
+  POSITION-Y: 5
+  
+per-player-skull4:
+  NAME: '&d&l功能类菜单'
+  LORE:
+    - '&7在这里打开功能类菜单'
+    - ''
+    - '&7你可以在这里领取&e每日奖励'
+    - '&7也可以使用你的服饰'
+    - '&7还有战斗通行证、神秘盒'
+    - '&7等精美物品等你来领取'
+    - '&7注意，服饰币仅&e金币&7互通'
+  COMMAND: 
+  - 'openmenu reward.yml'
+  - "sound: UI_BUTTON_CLICK"
+  position-x: 8
+  position-y: 3
+  id: player_head
+  skull: '62d90ad63dd826df02994abdcc6c2306163e1072d1b9e63ad4e7d7d1cf87cdf9'
+  
+csgo:
+  NAME: '&4&lCS:GO'
+  LORE:
+    - '&8枪战类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7经典游戏的复原，与CSGO玩法类似'
+    - '&7你需要阻止对方拆包、安包'
+    - '&7也需要小心背后的枪指着你的脑门'
+    - '&7注意：材质包可在群内获取'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &7支持中途加入'
+    - '&e● &7燃烧弹、烟雾弹、诱饵弹的还原'
+    - '&e● &7金钱获取与CSGO类似'
+    - '&e● &7回合减少，避免长时间单一游戏'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_CSGO%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&e"嘿，你知道C4和狙那个威力更大吗？"'
+    - ''
+  COMMAND: 'warp csgo'
+  id: player_head
+  skull: 'bb2abd66939f4cb7257a88cf52fbc6fdceec1433ec2a6ef16d62e34f6238781'
+  POSITION-X: 5
+  POSITION-Y: 5
+
+zanzu:
+  NAME: '&6&l称号领取'
+  COMMAND: 
+    - 'playerrank open'
+    - 'sound: ENTITY_WOLF_WHINE'
+  LORE:
+    - '&8领取你的专属称号'
+    - ''
+    - '&7&m---------------&c注意事项&7&m---------------'
+    - '&f➳ &7需在线达到&e24&7小时以上才能升级获取'
+    - '&f➳ &7以后每&a24&7小时可点绿宝石升级'
+    - '&f➳ &7点击牌子后只能输入&e4个中文'
+    - '&f➳ &7不能含骂人词出现，狗头、腐竹也算'
+    - '&f➳ &7不能出现彩色字体，且不能相同称号'
+    - '&4☞ &7若违规，获得称号后可能会被&c封禁7天'
+    - ''
+    - '&7&m---------------&6通知事项&7&m---------------'
+    - '&b✦ &7禁止连点器、背包整理、更多动作等'
+    - '&b✦ &7请勿利用地图、游戏BUG进行卡点'
+    - '&b✦ &7禁止长期游玩&e职业战争'
+    - '&b✦ &7请不要刷屏，多次使用重复符号'
+    - ''
+    - '&7&m---------------&d服务信息&7&m---------------'
+    - '&e☄ &7周末、下午、晚上人较多，望理解~'
+    - '&e☄ &7部分游戏未翻译，你可以帮忙：D'
+    - '&e☄ &7有任何问题均可入Q群：&a975222084&7询问'
+  id: player_head
+  skull: 'd31f7a41d17ab75bba2742028e8189cc9f148f91ee15e6fb0d61b1d57bccf3d4'
+  POSITION-X: 8
+  POSITION-Y: 4
+
+potato:
+  NAME: '&c&l烫手的山芋'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m------------&e游戏介绍&7&m------------'
+    - '&7随机选择一位幸运儿成为炸弹人'
+    - '&7你需要躲开他，越远越好'
+    - '&7你以为这样就安全了吗？'
+    - '&7不，或许下个幸运儿就是你'
+    - ''
+    - '&7&m------------&6游戏特色&7&m------------'
+    - '&e● &7游戏特殊道具获取'
+    - '&e● &7决赛回合功能'
+    - '&e● &7移动速度&aup'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_HotPotato%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&e"你对爆炸声喜欢还是畏惧？"'
+    - ''
+  COMMAND: 
+    - 'potatoes join'
+  id: player_head
+  skull: '1214b7b7aefe7546e66eb3d68613e547bd326586425055dfe4bd0384ab07db3a'
+  POSITION-X: 4
+  POSITION-Y: 2
+  
+Towedefense:
+  NAME: '&a&l塔防战争'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7喜欢植物大战僵尸？不如试试这个吧'
+    - '&7难道&e3D&7版的游戏，不比&a2D&7好看吗'
+    - '&7或许你应该试着挑战困难模式'
+    - '&7到时你会发现你的塔是多么渺小'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &7少量职业选择'
+    - '&e● &7玩家可加入僵尸阵营'
+    - '&e● &7每一定波数释放&eBOSS'
+    - '&e● &7开启飞行模式'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%towerdefense_players_count%'
+    - '&7至少需要玩家：&c1人'
+    - ''
+    - '&e"你缺少的只是耐心和快乐罢了"'
+    - ''
+  COMMAND: 
+    - 'td join'
+  id: player_head
+  skull: '4d3a6bd98ac1833c664c4909ff8d2dc62ce887bdcf3cc5b3848651ae5af6b'
+  POSITION-X: 6
+  POSITION-Y: 1
+  
+DRAGONESCAPE:
+  NAME: '&4&l龙逃生'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7在末影龙的追杀下，你能安心跑酷吗？'
+    - '&7或许你还不知道答案，但很快'
+    - '&7你就会被这种紧张感所屈服'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7脚步、职业选择'
+    - '&e● &7拥有记录功能'
+    - '&e● &7方块会被龙弹飞'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%dragonescape_players_count%'
+    - '&7至少需要玩家：&c1人'
+    - ''
+    - '&a"它向往的不是自由，而是方块和你"'
+    - ''
+  COMMAND: 
+    - 'de join'
+  id: player_head
+  skull: '92f9e97f4be533634bd1b3e3679edebfffb984013a1d5902fa3c35d3435bc10'
+  POSITION-X: 4
+  POSITION-Y: 1
+
+grass:
+  NAME: '&c&l空岛战争'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7在岛上进行搭建方块，搜寻所有物资'
+    - '&7最终将所有人击杀'
+    - '&7能生存到最后的都是王者'
+    - '&7你敢来挑战吗？'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &a幸运方块支持'
+    - '&e● &7购买职业后，均可开局附赠方块'
+    - '&e● &7开箱获得僵尸以保护自己'
+    - '&e● &7TNT雨事件的加入'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%skywars_players_count%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&e"有时候运气也是实力的一部分"'
+    - ''
+  COMMAND: 
+    - 'sw join'
+    - "sound: ENTITY_SHULKER_TELEPORT"
+  id: player_head
+  skull: 'c95d37993e594082678472bf9d86823413c250d4332a2c7d8c52de4976b362'
+  POSITION-X: 6
+  POSITION-Y: 4
+
+12:
+  NAME: '&c&l封号战争'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7多样变化的职业，你更喜欢哪个？'
+    - '&7或许你还不知道，但一番战斗后'
+    - '&7你或许会渐渐爱上这个职业'
+    - '&7又或许会慢慢厌恶这个职业'
+    - '&7这大概就是职业人的快乐吧~'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &a&l多次死亡、击杀，关监狱功能'
+    - '&e● &7箭道系统(大师&e2&7段)'
+    - '&e● &7赏金系统(大师&a5&7段)'
+    - '&3☠ &c沉迷后取消活动资格功能'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%kitbattle_players_count%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&6"你是战士、法师，还是袋鼠、蜘蛛侠？"'
+    - ''
+  COMMAND: 
+    - 'warp kitbattle'
+    - "sound: ENTITY_VINDICATOR_AMBIENT"
+  id: player_head
+  skull: 'a6e9e7da774dcef7ca3655b49ac1f1362d8c81dd8e9160a57d6876c227bff'
+  POSITION-X: 6
+  POSITION-Y: 2
+  
+
+3:
+  NAME: '&9&l方块危机'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7在众多道具方块中占领你喜欢的方块'
+    - '&7获取大量方块道具的同时'
+    - '&7你也要小心前面飞来的火球'
+    - '&7还有即将发射的TNT大炮'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &7直接抛射的烈焰弹'
+    - '&e● &7方块高度自定义'
+    - '&e● &7允许占领他人方块'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_asteroids-1% &8(仅显示一图)'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&e"想过方块也有他自己的意识吗"'
+    - ''
+  COMMAND: 
+    - 'color join'
+    - 'sound: ENTITY_SHULKER_TELEPORT'
+  id: player_head
+  skull: '79d1ef4c153bde8a7b08f92c0c4b79fdc2fcb57f83a31a8229c62ac75f1f0a31'
+  POSITION-X: 5
+  POSITION-Y: 2
+  
+7:
+  NAME: '&6&l幸运方块起床'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m-----------&e游戏介绍&7&m-----------'
+    - '&7保护你的床不被对方挖掘'
+    - '&7利用从村民处换来的东西'
+    - '&7来一次绝地反击'
+    - ''
+    - '&7&m-----------&6游戏特色&7&m-----------'
+    - '&e● &a幸运方块支持'
+    - '&e● &7独特的成就、玩法'
+    - '&e● &7能力升级商人'
+    - '&e● &7任意规模大小的队伍'
+    - '&e● &7允许玩家制作地图&8(附上作者)'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_BedWars%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&c"谁不喜欢在床上睡懒觉？"'
+    - ''
+  COMMAND: 
+    - 'menu2'
+    - "sound: UI_BUTTON_CLICK"
+  id: player_head
+  skull: 'ec1e47e14c043405871fd7c2173a5ffeaa2a4b1d260d55da8ab90ccce8bdfaee'
+  POSITION-X: 6
+  POSITION-Y: 5
+
+pg:
+  NAME: '&c&l饥饿游戏(又称生存游戏)'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m-------------&e游戏介绍&7&m-------------'
+    - '&7在众多玩家中迅速搜寻装备'
+    - '&7然后将最近的玩家击杀，越快越好'
+    - '&7因为一段时间后'
+    - '&7对面的运气，会比你好上几倍'
+    - ''
+    - '&7&m-------------&6游戏特色&7&m-------------'
+    - '&e● &7开始前的职业选择'
+    - '&e● &7速燃TNT、空投系统'
+    - '&e● &7空投派对功能'
+    - '&e● &7决赛圈功能、死亡竞赛功能'
+    - '&e● &7指南针可指附近玩家'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%survivalgames_players_count%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&d"谁能成为最后的生存者？"'
+    - ''
+  COMMAND: 
+    - 'sg join'
+    - 'sound: ENTITY_SHULKER_TELEPORT'
+  id: player_head
+  skull: '5c05bfae995eada34d14968ddbfb601b6b22c5975b5176e61cd223e31e3aef80'
+  POSITION-X: 3
+  POSITION-Y: 1
+
+UHC:
+  NAME: '&d&l龙蛋战争'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m---------------&e游戏介绍&7&m---------------'
+    - '&7与起床战争一样，但这次你要守护龙蛋'
+    - '&7在这里，装备会更强劲'
+    - '&7是时候考验你的&cPVP&7技术了'
+    - '&7你能成为龙蛋最后的保护者吗'
+    - ''
+    - '&7&m---------------&6游戏特色&7&m---------------'
+    - '&e● &7产块修复，资源在家即可获取'
+    - '&e● &7技能获取，购买后可使用技能'
+    - '&e● &7死亡不掉落功能'
+    - '&e● &7一键装备功能'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%eggwars_players_count%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&e"谁能抵抗营养丰富的龙蛋？"'
+    - ''
+  COMMAND: 
+    - 'ew join'
+  id: player_head
+  skull: 'e6ba9987f738e6d75d3b02c30d1480a360593ddb464bd1c81abb9d71d9e656c0'
+  POSITION-X: 2
+  POSITION-Y: 1
+
+Oneinbattleadvance:
+  NAME: '&d&l箭与远征'
+  LORE:
+    - '&8竞赛类游戏'
+    - ''
+    - '&7&m--------------&e游戏介绍&7&m--------------'
+    - '&7你可以选择击杀人或击杀僵尸'
+    - '&7你的血量有限，你需要尽量生存下去'
+    - '&7尽管最终迎接你的是无尽的敌人'
+    - ''
+    - '&7&m--------------&6游戏特色&7&m--------------'
+    - '&e● &7开始前的职业选择'
+    - '&e● &7击杀回血功能'
+    - '&e● &7特殊武器奖励功能'
+    - '&e● &7末日僵尸生存玩法'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%oitb_players_count%'
+    - '&7至少需要玩家：&c1人'
+    - ''
+    - '&e"我喜欢把你先养肥再吃掉"'
+    - ''
+  COMMAND: 
+    - 'oitb join'
+    - "sound: ENTITY_SHULKER_TELEPORT"
+  id: player_head
+  skull: '959dd61c2e23bbad57c2110dcb072350158a9d2ad1325ed1b9c27d3d5fc00ac7'
+  POSITION-X: 5
+  POSITION-Y: 1
+  
+nextpage:
+  NAME: '&3&l跨服'
+  COMMAND:
+  - 'openmenu stp.yml'
+  - "sound: ENTITY_WITHER_SPAWN"
+  LORE:
+    - '&7点我进行跨服'
+    - ''
+    - '&7你也可以输入&a/server&7进行传送'
+    - '&7从这里开始，认识更多好玩的游戏'
+    - '&7观赏更多&eMC&7的风景'
+  id: player_head
+  skull: 'a374fd6d1448fa130e9249af199023846b8fc877f117f3ac1c43403ba7fef3'
+  POSITION-X: 8
+  POSITION-Y: 2
+
+tictok:
+  NAME: '&a&l宣传帖/宣传视频'
+  COMMAND: 
+    - "sound: UI_BUTTON_CLICK"
+    - 'tell: MCBBS地址:https://www.mcbbs.net/thread-1200085-1-1.html'
+    - 'tell: 宣传视频:https://www.douyin.com/video/6986674763649387806?previous_page=app_code_link'
+  LORE:
+    - '&7点我查看服务器宣传帖'
+    - ''
+    - '&7如果你觉得服务器好玩'
+    - '&7可以在这里进行一下评分'
+    - '&7你的一句评论'
+    - '&7是我们发展的无限动力'
+    - ''
+    - '&7&m-----&6赞助列表&7&m-----'
+    - '&d&l☪ &eDrujs&7:&3190'
+    - '&d&l☪ &e露露&7:&31325'
+    - '&d&l☪ &eForeverZ&7:&3488'
+    - '&d&l☪ &exizi&7:&3148'
+    - '&d&l☪ &eshi_guang&7:&376'
+    - '&d&l☪ &eLeisure_&7:&368'
+    - '&d&l☪ &eDestroyer10&7:&3111'
+    - '&d&l☪ &eMina_Sakula&7:&390'
+    - ''
+  id: player_head
+  skull: 'a8e415b5c1eb45663da6fdae5798dd199b214d47676b392ca306f79293c97f84'
+  POSITION-X: 8
+  POSITION-Y: 5
+  
+PaintBall:
+  NAME: '&c&l彩蛋射击'
+  LORE:
+    - '&8休闲类游戏'
+    - ''
+    - '&7&m-------------&e游戏介绍&7&m-------------'
+    - '&7用雪球砸向对方，将对方送回基地'
+    - '&7同时小心满天飞舞的雪球'
+    - '&7这里会给你带来无尽的快乐与胜利'
+    - ''
+    - '&7&m-------------&6游戏特色&7&m-------------'
+    - '&e● &7多达&e8&7种类型的模式'
+    - '&e● &7游戏中的道具购买'
+    - '&e● &7击中方块染色功能'
+    - ''
+    - '&8➟&a点我加入'
+    - '&7当前游戏人数：&a%world_players_Paintball%'
+    - '&7至少需要玩家：&c2人'
+    - ''
+    - '&a"一起丢雪球吧，把人带走那种"'
+    - ''
+  COMMAND: 
+    - 'warp PaintBall'
+  id: player_head
+  skull: '71d728f50e334da4a1dad8d3e159e53cecbc7547abc6b116462987fd5c81'
+  POSITION-X: 3
+  POSITION-Y: 2
+  
+p1:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 1
+
+pfix:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 2
+  
+p13:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 3
+
+p18:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 4
+
+p23:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 5
+  
+p26:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 6
+  
+p27:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 7
+  POSITION-Y: 5
+
+p29:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 1
+  POSITION-Y: 6
+
+p30:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 1
+  POSITION-Y: 5
+
+p31:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 1
+  POSITION-Y: 4
+
+p32:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 1
+  POSITION-Y: 3
+
+p33:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 1
+  POSITION-Y: 2
+ 
+p34:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 1
+  POSITION-Y: 1 
+p35:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 2
+  POSITION-Y: 6 
+
+p36:
+  ID: RED_STAINED_GLASS_PANE
+  POSITION-X: 3
+  POSITION-Y: 6
+
+p38:
+  ID: LIME_STAINED_GLASS_PANE
+  POSITION-X: 9
+  POSITION-Y: 3
+
+p39:
+  ID: LIME_STAINED_GLASS_PANE
+  POSITION-X: 9
+  POSITION-Y: 4
+
+p40:
+  ID: emerald_block
+  COMMAND:
+  - 'openmenu example(二).yml'
+  - "sound: BLOCK_NOTE_BLOCK_BASS"
+  NAME: '&e&l当前页数：&a&l1'
+  LORE:
+    - '&7点我切换下一页'
+    - ''
+    - '&7该区域的游戏'
+    - '&7需要跨服才能游玩'
+  POSITION-X: 4
+  POSITION-Y: 6
+
+p400:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 5
+  POSITION-Y: 6
+  
+p41:
+  ID: LIGHT_BLUE_STAINED_GLASS_PANE
+  POSITION-X: 6
+  POSITION-Y: 6
+
+p42:
+  ID: ORANGE_STAINED_GLASS_PANE
+  POSITION-X: 9
+  POSITION-Y: 1
+
+p43:
+  ID: ORANGE_STAINED_GLASS_PANE
+  POSITION-X: 8
+  POSITION-Y: 1
+
+p44:
+  ID: ORANGE_STAINED_GLASS_PANE
+  POSITION-X: 9
+  POSITION-Y: 2
+
+p46:
+  ID: ORANGE_STAINED_GLASS_PANE
+  POSITION-X: 9
+  POSITION-Y: 5
+
+p48:
+  ID: ORANGE_STAINED_GLASS_PANE
+  POSITION-X: 8
+  POSITION-Y: 6
+
+p50:
+  ID: BROWN_STAINED_GLASS_PANE
+  COMMAND:
+  - 'spawn'
+  - "sound: ENTITY_SHULKER_TELEPORT"
+  NAME: '&b&l主城'
+  LORE:
+    - '&7点我返回主城'
+    - ''
+    - '&7你也可以&a/spawn&7回主城'
+    - '&7在这里，你可以进行服饰抽奖'
+    - '&7也能在这里使用服饰炫耀~'
+    - '&7并且大部分活动于主城举行'
+  POSITION-X: 6
+  POSITION-Y: 3
+  
+brown1:
+  ID: ORANGE_STAINED_GLASS_PANE
+  POSITION-X: 9
+  POSITION-Y: 6
+   
+p51:
+  ID: BROWN_STAINED_GLASS_PANE
+  COMMAND:
+  - 'spawn'
+  - "sound: ENTITY_SHULKER_TELEPORT"
+  NAME: '&b&l主城'
+  LORE:
+    - '&7点我返回主城'
+    - ''
+    - '&7你也可以&a/spawn&7回主城'
+    - '&7在这里，你可以进行服饰抽奖'
+    - '&7也能在这里使用服饰炫耀~'
+    - '&7并且大部分活动于主城举行'
+  POSITION-X: 5
+  POSITION-Y: 3
+
+p52:
+  ID: BROWN_STAINED_GLASS_PANE
+  COMMAND:
+  - 'spawn'
+  - "sound: ENTITY_SHULKER_TELEPORT"
+  NAME: '&b&l主城'
+  LORE:
+    - '&7点我返回主城'
+    - ''
+    - '&7你也可以&a/spawn&7回主城'
+    - '&7在这里，你可以进行服饰抽奖'
+    - '&7也能在这里使用服饰炫耀~'
+    - '&7并且大部分活动于主城举行'
+  POSITION-X: 5
+  POSITION-Y: 4
+
+p53:
+  ID: BROWN_STAINED_GLASS_PANE
+  COMMAND:
+  - 'spawn'
+  - "sound: ENTITY_SHULKER_TELEPORT"
+  NAME: '&b&l主城'
+  LORE:
+    - '&7点我返回主城'
+    - ''
+    - '&7你也可以&a/spawn&7回主城'
+    - '&7在这里，你可以进行服饰抽奖'
+    - '&7也能在这里使用服饰炫耀~'
+    - '&7并且大部分活动于主城举行'
+  POSITION-X: 4
+  POSITION-Y: 4
+
+p54:
+  ID: BROWN_STAINED_GLASS_PANE
+  COMMAND:
+  - 'spawn'
+  - "sound: ENTITY_SHULKER_TELEPORT"
+  NAME: '&b&l主城'
+  LORE:
+    - '&7点我返回主城'
+    - ''
+    - '&7你也可以&a/spawn&7回主城'
+    - '&7在这里，你可以进行服饰抽奖'
+    - '&7也能在这里使用服饰炫耀~'
+    - '&7并且大部分活动于主城举行'
+  POSITION-X: 4
+  POSITION-Y: 5
