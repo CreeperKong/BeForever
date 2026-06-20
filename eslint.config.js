@@ -8,14 +8,18 @@ export default defineConfig([
   globalIgnores(['dist', 'js/**', 'css/**', 'public/**']),
   {
     files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
     languageOptions: {
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+    plugins: {
+      ...reactHooks.configs.flat.recommended.plugins,
+      ...reactRefresh.configs.vite.plugins,
+    },
+    rules: {
+      ...js.configs.recommended.rules,
+      ...reactHooks.configs.flat.recommended.rules,
+      ...reactRefresh.configs.vite.rules,
     },
   },
 ])

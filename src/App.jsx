@@ -142,7 +142,7 @@ function AboutPage() {
       <p>服务器类型：纯小游戏服</p>
       <p>服务器主版本：1.20.4</p>
       <p>支持版本：1.12~</p>
-      <p><strong>BeForever的含义：</strong>“Best friend / Boyfriend / Baby&apos;s father / Be Forever”。</p>
+      <p><strong>BeForever的含义：</strong>“Best friend / Boyfriend / Baby's father / Be Forever”。</p>
       <p><strong>服务器起源：</strong>从早期断续开服到重新长期运营，源于玩家支持与坚持。</p>
       <h2>服务器特色</h2>
       <ul>

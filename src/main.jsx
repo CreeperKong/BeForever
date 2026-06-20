@@ -4,7 +4,13 @@ import App from './App'
 import './index.css'
 
 const path = window.location.pathname
-const page = path.endsWith('/about.html') ? 'about' : path.endsWith('/games.html') ? 'games' : 'home'
+
+const PAGE_MAP = {
+  '/about.html': 'about',
+  '/games.html': 'games',
+}
+
+const page = PAGE_MAP[path] ?? 'home'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
